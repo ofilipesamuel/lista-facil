@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eef4ff;
+  color: #1d2a3a;
+}
+
+header {
+  background-color: #2463a9;
+  color: white;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p, footer p {
+  margin: 0;
+}
+
+main {
+  width: 90%;
+  max-width: 650px;
+  margin: 35px auto;
+}
+
+.caixa {
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.topo-caixa, .linha-formulario, li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topo-caixa {
+  justify-content: space-between;
+}
+
+h2 {
+  color: #2463a9;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 2px solid #9aaabd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 16px;
+  background-color: #2463a9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #17497f;
+}
+
+button:focus, input:focus {
+  outline: 3px solid #f2b705;
+  outline-offset: 2px;
+}
+
+.botao-secundario {
+  background-color: #44566c;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 0;
+}
+
+li {
+  justify-content: space-between;
+  background-color: #f5f7fa;
+  border-left: 5px solid #2463a9;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.texto-tarefa {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.concluida .texto-tarefa {
+  text-decoration: line-through;
+  color: #52606d;
+}
+
+.botao-concluir {
+  background-color: #287a3c;
+}
+
+.botao-excluir {
+  background-color: #b52b37;
+}
+
+.mensagem {
+  min-height: 20px;
+  color: #287a3c;
+  font-weight: bold;
+}
+
+.lista-vazia {
+  text-align: center;
+  color: #52606d;
+}
+
+.texto-grande {
+  font-size: 120%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #44566c;
+}
+
+@media (max-width: 520px) {
+  .linha-formulario {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  li {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .texto-tarefa {
+    flex-basis: 100%;
+  }
+}

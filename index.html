@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma lista de tarefas simples para organizar o dia.">
+  <title>Lista Fácil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lista Fácil</h1>
+    <p>Organize suas tarefas do dia.</p>
+  </header>
+
+  <main>
+    <section class="caixa" aria-labelledby="titulo-tarefas">
+      <div class="topo-caixa">
+        <h2 id="titulo-tarefas">Minhas tarefas</h2>
+        <button id="aumentarTexto" class="botao-secundario" type="button" aria-label="Aumentar ou diminuir o tamanho do texto">A+</button>
+      </div>
+
+      <form id="formTarefa">
+        <label for="tarefa">Digite uma tarefa:</label>
+        <div class="linha-formulario">
+          <input id="tarefa" name="tarefa" type="text" maxlength="80" placeholder="Ex.: Fazer atividade" required>
+          <button type="submit">Adicionar</button>
+        </div>
+      </form>
+
+      <p id="mensagem" class="mensagem" role="status" aria-live="polite"></p>
+      <ul id="listaTarefas" aria-label="Lista de tarefas"></ul>
+      <p id="listaVazia" class="lista-vazia">Nenhuma tarefa adicionada.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto avaliativo de UX/UI</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
